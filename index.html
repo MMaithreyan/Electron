@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <title>Web Bluetooth API</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Web Bluetooth API</h1>
+
+    <h1 id="data"></h1>
+
+    <h1 id="pitch"></h1>
+
+    <button id="dataView">dataView</button>
+
+    <button id="scan">Scan</button>
+
+    <button id="cancel">Cancel Bluetooth Request</button>
+
+    <p>Available Bluetooth devices:</p>
+    <div id="devices"></div>
+
+    <p>Currently selected Bluetooth device: <strong id="device-name"></strong></p>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>
